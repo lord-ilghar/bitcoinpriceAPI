@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="cont">   
+                <div id="infor">
+                    <h3>informations</h3>
+                        <p>great tool for managing bitcoin price and live and history</p>
+                        <small>contact email : aylqarm@gmail.com</small>
+                    
+            </div>
+            <div id="chard">
+                <h3>history data</h3>
+                <canvas id="chart"></canvas>
+                <small>last update : <span id="lastUP"></span></small>
+            </div>
+
+    </section>
+    <section class="livepric">
+        <h3>Online</h3>
+        <p>price right now : <span id="price"></span></p>
+        <small>last update : <div id="updateTime"></div></small>
+    </section>    
+</body>
+<script src="javascripts/chart.js"></script>
+<script src="javascripts/liveprice.js"></script>
+</html>
