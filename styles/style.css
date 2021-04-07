@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
   --chard: #c8d6e5;
 }
@@ -19,23 +21,33 @@ ul {
   align-items: center;
 }
 a {
-  color: white;
-  font-size: 0.8rem;
-  text-transform: capitalize;
-  text-align: center;
+  color: whitesmoke;
   text-decoration: none;
-  padding: 0.3rem;
+}
+nav a {
+  font-size: 0.8rem;
+}
+nav li {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 0.3em;
+}
+nav li:hover {
+  background-color: #2c3e50;
 }
 li + li {
-  margin-top: 1em;
+  margin-top: 0.3rem;
 }
 .navbar {
   background-color: #34495e;
-  padding: 0.3em;
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
   background-color: #dfe6e9;
   direction: rtl;
 }
@@ -74,13 +86,9 @@ canvas {
   margin: 1em auto;
   padding: 0.4rem;
 }
-li a:hover {
-  color: black;
-  background-color: #2c3e50;
-}
 small {
   margin-top: auto;
-  color: white;
+  color: lightseagreen;
   text-transform: capitalize;
 }
 
@@ -91,11 +99,10 @@ span {
 .livepric {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  max-width: 25em;
+  width: 100%;
+  max-width: 30em;
   min-height: 20em;
-  margin-left: auto;
-  margin-top: 1em;
+  margin: 1em;
   background-color: #bdc3c7;
   padding: 1em;
   text-align: center;
@@ -115,20 +122,47 @@ span {
 .main {
   background-color: rgb(189, 195, 199);
   display: flex;
+  justify-content: space-between;
 }
-
-@media screen and (min-width: 700px) {
-  #infor {
-    width: 30%;
-    margin-right: 0;
-    margin-top: 1em;
-  }
-
-  #chard {
-    width: 50%;
-  }
-
-  .cont {
-    display: flex;
-  }
+.updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post {
+  background: #34495e;
+  padding: 1em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  margin: 1em;
+  text-align: center;
+  border-radius: 1em;
+  min-height: 20em;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 30em;
+}
+.post small {
+  margin-top: 10em;
+}
+.img h3 {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 30em 0 rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255, 0.7);
+  padding: 0.3em;
+}
+.img {
+  background: url('../img/download.jpg'), rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-size: cover;
+  min-height: 10em;
+}
+fieldset legend {
+  margin-right: 1em;
+  padding: 0.3em;
+}
+fieldset {
+  margin: 1em;
+  margin-right: 0;
+  border-right: none;
 }
