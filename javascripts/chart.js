@@ -32,7 +32,7 @@ async function chart() {
       datasets: [
         {
           data: xvalue,
-          label: 'price up',
+          label: 'price',
           borderColor: 'green',
         },
       ],

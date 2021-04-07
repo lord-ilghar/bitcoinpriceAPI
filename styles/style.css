@@ -8,10 +8,8 @@
   padding: 0;
   margin: 0;
 }
-
-p {
-  padding: 0;
-  margin: 0;
+h3 {
+  padding: 0.3em;
 }
 
 ul {
@@ -21,6 +19,10 @@ ul {
   align-items: center;
 }
 a {
+  color: black;
+  text-decoration: none;
+}
+nav a {
   color: whitesmoke;
   text-decoration: none;
 }
@@ -48,7 +50,6 @@ li + li {
 body {
   text-transform: capitalize;
   font-family: 'Roboto', sans-serif;
-  background-color: #dfe6e9;
   direction: rtl;
 }
 
@@ -60,19 +61,21 @@ body {
 }
 
 .cont h3 {
-  padding: 0.5em;
   text-transform: capitalize;
 }
 
 #chard {
+  text-align: center;
   padding: 0.3rem;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 1rem;
 }
 
 canvas {
   border-radius: 1em;
   background-color: var(--chard);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
 }
 
 #infor {
@@ -83,7 +86,10 @@ canvas {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
   background-color: var(--chard);
   border-radius: 1em;
-  margin: 1em auto;
+  max-width: 30em;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 0.4rem;
 }
 small {
@@ -99,24 +105,19 @@ span {
 .livepric {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   max-width: 30em;
   min-height: 20em;
-  margin: 1em;
-  background-color: #bdc3c7;
+  margin: 1em auto;
+  background-color: var(--chard);
   padding: 1em;
   text-align: center;
   border-radius: 1rem;
-  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8);
 }
 .section {
   display: flex;
   flex-direction: row;
-}
-
-.livepric h3,
-.livepric small {
-  padding: 1rem;
 }
 
 .main {
@@ -126,8 +127,9 @@ span {
 }
 .updates {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .post {
   background: #34495e;
@@ -142,14 +144,9 @@ span {
   width: 60%;
   max-width: 30em;
 }
-.post small {
-  margin-top: 10em;
-}
 .img h3 {
   background: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 30em 0 rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255, 0.7);
-  padding: 0.3em;
 }
 .img {
   background: url('../img/download.jpg'), rgba(0, 0, 0, 0.6);
