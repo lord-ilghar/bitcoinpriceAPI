@@ -2,8 +2,7 @@ const fram = document.getElementById('chart');
 let xlabels = [];
 let xvalue = [];
 
-historyweek();
-
+setInterval(historyweek, 1000);
 async function historyweek() {
   const res = await fetch(
     'https://api.coindesk.com/v1/bpi/historical/close.json'
