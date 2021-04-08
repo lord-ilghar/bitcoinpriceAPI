@@ -77,7 +77,6 @@ canvas {
   background-color: var(--chard);
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4);
 }
-
 #infor {
   min-height: 10em;
   display: flex;
@@ -144,6 +143,19 @@ span {
   width: 60%;
   max-width: 30em;
 }
+.updatepage {
+  background: #34495e;
+  padding: 1em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  margin: 1em;
+  text-align: center;
+  border-radius: 1em;
+  min-height: 20em;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 30em;
+}
 .img h3 {
   background: rgba(0, 0, 0, 0.4);
   color: rgb(255, 255, 255, 0.7);
@@ -162,4 +174,39 @@ fieldset {
   margin: 1em;
   margin-right: 0;
   border-right: none;
+}
+.color,
+.color:hover {
+  background-color: #f9ca24;
+}
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+  .updatepage,
+  .post {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .updatepage,
+  .post {
+    width: 30%;
+    min-height: 23em;
+  }
+  #infor {
+    max-width: 35em;
+    min-height: 12em;
+    text-align: end;
+    margin-left: 1.4em;
+  }
+  nav li {
+    padding: 0.5em;
+  }
+  nav li + li {
+    margin-top: 1em;
+  }
+  #chard {
+    width: 70%;
+  }
 }
